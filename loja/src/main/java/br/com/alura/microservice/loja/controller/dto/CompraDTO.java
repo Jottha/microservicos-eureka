@@ -1,8 +1,11 @@
 package br.com.alura.microservice.loja.controller.dto;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class CompraDTO {
+public class CompraDTO implements Serializable {
+
+	private static final long serialVersionUID = 130581744761194387L;
 
 	private List<ItemDaCompraDTO> itens;
 	
@@ -23,6 +26,4 @@ public class CompraDTO {
 	public void setEndereco(EnderecoDTO endereco) {
 		this.endereco = endereco;
 	}
-	
-	
 }

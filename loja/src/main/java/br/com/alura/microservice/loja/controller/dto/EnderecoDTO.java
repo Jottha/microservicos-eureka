@@ -1,6 +1,10 @@
 package br.com.alura.microservice.loja.controller.dto;
 
-public class EnderecoDTO {
+import java.io.Serializable;
+
+public class EnderecoDTO implements Serializable {
+
+	private static final long serialVersionUID = -2780145615065713690L;
 
 	private String rua;
 	
@@ -31,6 +35,4 @@ public class EnderecoDTO {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
-	
-	
 }

@@ -1,6 +1,10 @@
 package br.com.alura.microservice.loja.controller.dto;
 
-public class ItemDaCompraDTO {
+import java.io.Serializable;
+
+public class ItemDaCompraDTO implements Serializable {
+
+	private static final long serialVersionUID = -6568512355272105792L;
 
 	private long id;
 	
@@ -21,6 +25,4 @@ public class ItemDaCompraDTO {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-	
-	
 }
